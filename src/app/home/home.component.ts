@@ -74,7 +74,7 @@ export class HomeComponent implements OnInit {
  
         
         let audio:any =document.querySelector(".audio");
-        let url=res;
+        let url:any={...res};
         url=url.preview_url;
         audio.src=url;
         audio.play();
