@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+}
+.title{
+    background-color: black;
+    text-align: center;
+    font-size: 28px;
+    padding: 2px;
+    min-height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    font-family: 'Roboto', sans-serif;
+}
+.link{
+    text-decoration: none;
+    color: #84bd00;
+}
+.search-bar{
+    width: 60%;
+
+}

@@ -1,0 +1,27 @@
+
+<div class="artist-container">
+
+        <li class="list-of-artists-li" *ngFor="let artist of artists" >
+                <div class="list-of-artists" (click)="showAlbum(artist.id)">
+                    
+                    <div class="img">
+
+                        <img [src]="artist.images[0].url" max-height="100%" width="100%"> 
+                    </div>
+                    <p class="name" >
+                        {{artist.name}}
+                    </p>
+        
+                
+                </div>
+             
+            </li>
+            <p *ngIf="artist">
+                    0 artists found!
+                </p>
+            
+
+
+
+
+</div>

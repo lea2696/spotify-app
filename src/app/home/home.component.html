@@ -1,0 +1,61 @@
+<div class="not-logged-home" *ngIf="!token">
+
+    <p class="text-login">
+            You have to Log In to use Spotify Client. Please Click <span (click)="login()" class="click-here">Here</span> to Log In
+    </p>
+
+</div>
+<div class="loading" *ngIf="token&&!user">
+    Loading..
+</div>
+
+<div class="logged-home" *ngIf="token&&user">
+     
+
+                         <h2 class="title">            
+                         <a routerLink="/" class="link"> Spotify Client </a> 
+                        </h2>
+                 
+
+
+    <div class="welcome-text"> 
+
+            <h3 class="welcome user">
+               Hello {{user.display_name}}. Welcome to <span class="logo"> Spotify Client
+                </span>
+            </h3>
+            <p>
+                Search your favorite songs over Spotify, just enter and artists name in the following box and enjoy!
+            </p>
+            <p class="search" *ngIf=search>
+                    You are currently search the <span class="item"> {{search}} </span> artists
+            </p>
+
+    </div>
+        <div class="search-bar">
+                <app-search-bar  (searchChange)='searchChange($event)'></app-search-bar>
+        </div>
+  
+    <app-artist [search]="search" ></app-artist>
+    <div class="favorite-songs-container" *ngIf="favorite.length">
+        <h3 class="title-favorite">Favorite Songs</h3>
+            <div class="favorite-songs"  *ngIf="favorite.length">
+   
+                    <div class="songs" *ngFor="let track of favorite">
+                        <img class="img-song" [src]="track.albumImage" (click)="playSong(track)">
+                        <div class="song-info">
+                                <p>{{track.trackName}}</p>
+                                <p>{{track.artistName}}</p>
+                                <p>{{track.albumName}}</p>
+                                <p>{{track.duration | songDuration}}</p>
+                        </div>
+                        <span class="click" (click)=eliminateTrack(track)>X</span>
+                        
+            
+                    </div>
+    </div>
+  
+    </div>
+    <audio class="audio" controls *ngIf="audio"></audio>
+</div>
+

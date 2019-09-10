@@ -1,0 +1,131 @@
+.not-logged-home{
+    min-height: 100vh;
+    background-image: linear-gradient(to right bottom, rgba(15, 15, 44, 0.6), rgba(173, 169, 169, 0.6)),
+    url("/../assets/images/amplificador-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.text-login{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 42px;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+
+}
+.click-here:hover{
+    color: #84bd00;;
+    text-shadow: 0 0 2px #57750f;
+    cursor: pointer;
+}
+.logo{
+    color: #84bd00;;
+    text-shadow: 0 0 2px #57750f;
+    display: block;
+    font-size: 36px;
+    margin: 10px;
+}
+
+.title{
+    background-color: black;
+    text-align: center;
+    font-size: 28px;
+    padding: 2px;
+    min-height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.link{
+    text-decoration: none;
+    color: #84bd00;
+}
+.search-bar{
+
+    margin: 0 auto;
+}
+.welcome-text{
+
+    margin-left: 40px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.loading{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 42px;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    background-color: black;
+
+}
+.logged-home{
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+
+
+}
+.user{
+    margin-left: 5px;
+    font-size: 24px;
+}
+.item{
+    color: blue;
+}
+.favorite-songs-container{
+    margin-top: 30px;
+}
+.title-favorite{
+    text-align: center;
+    margin: 20px;
+}
+.favorite-songs{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.songs{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.img-song{
+    width: 40%
+}
+.song-info{
+    width: 50%;
+}
+.click{
+    color:red;
+    cursor: pointer;
+    font-family: "roboto" sans-serif;
+    font-weight: bolder;
+}
+.audio{
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+}
+@media screen and (max-width: 992px) {
+   .songs{
+       width: 100%;
+   }
+   .welcome-text{
+       display: none;
+   }
+  }

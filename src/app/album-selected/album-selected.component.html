@@ -1,0 +1,45 @@
+<div class="container">
+        <div class="nav">
+    
+                <h2 class="title">            
+                        <a routerLink="/" class="link"> Spotify Client </a> 
+                       </h2>
+                    <div class="search-bar">
+                        <app-search-bar></app-search-bar>
+                    </div>
+        </div>
+                <div class="albums-container" *ngIf="album">
+                    <div class="album-info">
+                        <img class="img-album" *ngIf="album.images" [src]="album.images[0].url">
+                        <p class="name">
+                            <span class="artist-name">
+                                {{tracks[0].artists[0].name}}
+
+                            </span>
+                            <span>
+                                
+                                {{album.name}}
+                            </span>
+                            <span class="artist-name">
+                                {{album.release_date}}
+                            </span>
+                        </p>
+
+                    </div>
+                    <div class="list"> 
+                        
+                        <li class="list-of-tracks-li" *ngFor="let track of tracks">
+                             <span>   {{track.name}} </span>
+                             <span> {{track.duration_ms| songDuration }}</span>
+                             <span class="favorite" *ngIf="!favoriteInclude(track)"
+                              (click)="addTrack(track, album.images[0].url, album.name )" >+</span>
+                             <span class="favorite-selected" *ngIf="favoriteInclude(track)"
+                             (click)="deleteSong(track)">
+                                -
+                             </span>
+                            </li>
+                    </div>
+                           
+                </div>
+                
+        

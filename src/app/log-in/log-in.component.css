@@ -1,0 +1,26 @@
+.login-container{
+    background-image: linear-gradient(to right bottom, rgba(68, 68, 209, 0.6), rgba(173, 169, 169, 0.6)),
+     url("/../assets/images/concert-background.jpg");
+    min-height: 92vh;
+    color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+.text{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 42px;
+    font-weight: bolder;
+    text-align: center;
+
+}
+.click-here:hover{
+    color: #84bd00;;
+    text-shadow: 0 0 2px #57750f;
+    cursor: pointer;
+}

@@ -1,0 +1,43 @@
+.title{
+    text-align: center;
+    margin: 10px;
+ }
+ .artist-container{
+     max-width: 80%;
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0 auto;
+     height: 100%;
+
+
+ }
+ .list-of-artists-li{
+     width: 25%;
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+    padding: 10px;
+
+ }
+ .list-of-artists{
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     
+
+ }
+
+ .name{
+     width: 50%;
+     text-align: center;
+
+ }
+ .img{
+     width: 50%;
+ }
+ @media screen and (max-width: 992px) {
+     .list-of-artists-li{
+         width: 100%;
+     }
+    }
