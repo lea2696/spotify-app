@@ -11,11 +11,11 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class ArtistAlbumComponent implements OnInit {
   public id:any;
-  private token:any;
+  public token:any;
   public albums:any;
   public tracksSelected:any;
   public imageSelected:any;
-  private artist:any;
+  public artist:any;
   constructor(private _data:DataService, private _httpService:HttpService, private router:Router, 
     private route:ActivatedRoute) { 
       this.route.params.subscribe( params => this.id=params.id );

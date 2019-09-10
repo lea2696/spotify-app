@@ -12,8 +12,8 @@ import {Router} from '@angular/router';
 export class ArtistComponent implements OnInit, OnChanges {
   @Input()  search:string;
   public search2:any
-  private token:any;
-  private artists:any;
+  public token:any;
+  public artists:any;
   constructor(private _httpService:HttpService, private _data:DataService, private router:Router) { }
 
   ngOnInit() {

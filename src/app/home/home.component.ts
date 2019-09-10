@@ -10,11 +10,12 @@ import {Router} from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  private token:any;
-  private user:any;
+  public token:any;
+  public user:any;
   public search:string;
   public favorite:any;
-  private audio:any;
+  public audio:any;
+
   constructor(private _data:DataService, private _httpService:HttpService) {
     this.search=this._data.getSearch2();
     let favorite:any=localStorage.getItem("favorites");
