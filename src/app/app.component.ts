@@ -19,7 +19,7 @@ export class AppComponent implements OnInit, OnChanges {
         this.router.navigate(["/home"]);
       }
 
-    if(window.location.href.includes("set-token")){
+    if(window.location.href.includes("access_token")){
       this.token= window.location.hash.split('=')[1];
       this._data.putToken(this.token);
       this.router.navigate(["/home"]); 
