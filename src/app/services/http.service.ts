@@ -8,7 +8,7 @@ import {Observable} from "rxjs";
 export class HttpService {
   private url:string;
   constructor(  public _http: HttpClient) { 
-    this.url = "https://accounts.spotify.com/authorize?client_id=1d449aa39a5745a9b8cb38b6f69d7052&redirect_uri=https://spotify-app.netlify.com/&response_type=token";
+    this.url = "https://accounts.spotify.com/authorize?client_id=0d42779c529943afac070ac8b82dca76&redirect_uri=https://spotify-app.netlify.com/&response_type=token";
 
   }
   authenticate(){
