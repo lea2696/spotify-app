@@ -51,10 +51,10 @@
 }
 .welcome-text{
     padding: 50px;
-    margin: 0 40px 0 40px;
+    margin: 20px 40px 0 40px;
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
-    clip-path: polygon(0 10%, 100% 20%, 100% 80%, 0 90%);
+    clip-path: polygon(50% 5%, 100% 0, 100% 100%, 50% 95%, 0 100%, 0 0);
     margin-bottom: 20px;
     background-color: #1a750e;
     border-radius: 20px;
