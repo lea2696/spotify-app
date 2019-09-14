@@ -58,6 +58,10 @@
     margin-bottom: 20px;
     background-color: #1a750e;
     border-radius: 20px;
+    background-image: linear-gradient(to right bottom, rgba(15, 56, 9, 0.5), rgba(52, 221, 30, 0.5)  ), url("/../assets/images/concert2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
 
 }
 

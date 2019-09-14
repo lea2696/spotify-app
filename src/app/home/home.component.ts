@@ -69,7 +69,6 @@ export class HomeComponent implements OnInit {
   }
   playSong(track){
     this.audio=true;
-    console.log(track.trackId);
     this._httpService.getSongInfo(track.trackId, this.token).subscribe(
       res=>{
  

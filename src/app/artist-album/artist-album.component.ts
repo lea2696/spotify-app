@@ -26,14 +26,14 @@ export class ArtistAlbumComponent implements OnInit {
    if(this.id){
     this._httpService.getSearchAlbum(this.id, this.token).subscribe(
       res=>{
-        console.log(res);
+
         this.albums=res.items;
       },
       err=>console.log(err)
     )
     this._httpService.getArtistInfo(this.id, this.token).subscribe(
       res=>{
-        console.log(res);
+
         this.artist=res;
         
 

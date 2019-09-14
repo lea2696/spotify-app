@@ -32,7 +32,6 @@ export class AlbumSelectedComponent implements OnInit {
   
       this._httpService.getAlbumInfo(this.idAlbum, this.token).subscribe(
         res=>{
-          console.log(res);
           this.tracks=res;
           this.tracks=this.tracks.tracks.items;
   
@@ -48,7 +47,6 @@ export class AlbumSelectedComponent implements OnInit {
    }
   }
  addTrack(track, image, album){
-   console.log(track, image, album);
    let favorite:any=localStorage.getItem("favorites");
    favorite=JSON.parse(favorite);
    if(!favorite){

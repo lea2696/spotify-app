@@ -22,7 +22,6 @@ export class ArtistComponent implements OnInit, OnChanges {
       this.token=this._data.getToken()
       this._httpService.getSearchArtist(this.search2, this.token).subscribe(
         res=>{
-          console.log(res);
           this.artists=res.artists.items.filter(data=>data.name&&data.images[0]);
           
   
