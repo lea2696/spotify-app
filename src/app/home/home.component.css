@@ -50,10 +50,15 @@
     margin: 0 auto;
 }
 .welcome-text{
-
-    margin-left: 40px;
+    padding: 50px;
+    margin: 0 40px 0 40px;
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
+    clip-path: polygon(0 10%, 100% 20%, 100% 80%, 0 90%);
+    margin-bottom: 20px;
+    background-color: #1a750e;
+    border-radius: 20px;
+
 }
 
 .loading{
@@ -71,7 +76,7 @@
 }
 .logged-home{
     min-height: 100vh;
-    background-color: black;
+    background-color: rgb(20, 20, 20);
     color: white;
     font-family: 'Roboto', sans-serif;
     position: relative;
@@ -83,7 +88,7 @@
     font-size: 24px;
 }
 .item{
-    color: blue;
+    color: rgb(255, 196, 0);
 }
 .favorite-songs-container{
     margin-top: 30px;
@@ -96,6 +101,7 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    padding: 30px;
 }
 .songs{
     display: flex;

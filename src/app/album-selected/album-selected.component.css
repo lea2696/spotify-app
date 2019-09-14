@@ -1,5 +1,5 @@
 .container{
-    background-color: black;
+    background-color: rgb(20, 20, 20);
     color:white;
     min-height: 100vh;
 }
@@ -35,10 +35,15 @@
 .album-info{
     display: flex;
     align-items: center;
+    background-color: black;
+    border: 5px solid #1ed761;
+    width: 80%;
+    border-radius: 20px;
+    margin-bottom: 40px;
 }
 .img-album{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 .artist-name{
     display: block;
@@ -46,12 +51,12 @@
 .name{
     width: 60%;
     font-family: "Roboto" sans-serif;
-    font-size: 28px;
-    margin: 5px;
+    font-size: 24px;
+    margin: 15px;
 
 }
 .list{
-    background-color: #29242f;
+
     margin-top: 20px;
 }
 
@@ -60,7 +65,8 @@
     margin: 5px;
     font-family: "Roboto" sans-serif;
     font-size: 24px;
-    border-bottom: 2px solid white;;
+    background-color: black;
+   
     border-radius: 5px;
     padding: 5px; 
     position: relative;

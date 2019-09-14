@@ -34,6 +34,8 @@ export class ArtistAlbumComponent implements OnInit {
     this._httpService.getArtistInfo(this.id, this.token).subscribe(
       res=>{
         console.log(res);
+        this.artist=res;
+        
 
   
       },

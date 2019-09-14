@@ -8,6 +8,7 @@
                 <app-search-bar></app-search-bar>
             </div>
 </div>
+
 <div class="container">
 
         <div class="albums-container">
@@ -15,7 +16,7 @@
                     <img [src]="artist.images[0].url" class="artist-img" >
                 <div class="artist-info">
                         <h3>{{artist.name}}</h3>
-                        <h3>{{artist.genres[0]}}</h3>
+                        <h3 class="genre">{{artist.genres[0]}}</h3>
                         <h3>Followers: {{artist.followers.total}}</h3>
                 </div>
               
